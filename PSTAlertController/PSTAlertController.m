@@ -525,7 +525,7 @@ static NSUInteger PSTVisibleAlertsCount = 0;
 }
 
 + (instancetype)alertWithTitle:(NSString *)title message:(NSString *)message {
-    return [[self alloc] initWithTitle:title message:message preferredStyle:PSTAlertControllerStyleAlert];
+    return [[self alloc] initWithTitle:title message:nil preferredStyle:PSTAlertActionStyleDefault];
 }
 
 + (instancetype)actionSheetWithTitle:(NSString *)title {
